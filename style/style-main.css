@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+*{
+    font-family: 'Funnel Display', sans-serif, Arial;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+h1{
+    margin: 15px;
+}
+
+#nav-list{
+    margin-left: auto;
+    margin-right: 55px;
+}
+
+#nav-list-content{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+#pos-header{
+    margin: 25px;
+    border: 2px solid rgb(180, 180, 180);
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+}
+
+.swiper-slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-slider{
+    border-radius: 20px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.inform{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
