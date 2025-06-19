@@ -41,6 +41,11 @@ h1{
     width: 70vw;
 }
 
+#pos-header p{
+    font-size: 19px;
+    width: 80vw;
+}
+
 .swiper-slide {
   border-radius: 20px;
   overflow: hidden;
@@ -58,3 +63,53 @@ h1{
     justify-content: center;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+}
+
+#pesquisar-container{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    margin-left: 35%;
+}
+#pesquisar{
+    display: flex;
+    width: 30vw;
+    height: 25px;
+    outline: 0;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#checkbox-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#checkbox-container > div input[type="checkbox"]{
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+#checkbox-container > div input[type="checkbox"] label{
+    transform: scale(1.5);
+}
+
+.postagem{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+.postagem img{
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+}
