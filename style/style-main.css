@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 *{
     font-family: 'Funnel Display', sans-serif, Arial;
@@ -9,7 +10,7 @@
 
 header{
     margin-bottom: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,6 +19,13 @@ header{
 
 h1{
     margin: 15px;
+    
+    color: rgb(110, 51, 96);
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    background-color: whitesmoke;
 }
 
 #nav-list{
@@ -29,6 +37,31 @@ h1{
     display: flex;
     flex-direction: row;
     gap: 35px;
+}
+
+.list-links{
+    position: relative;
+    color: rgb(110, 51, 96);
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list-links::after{
+    content: "";
+    position: absolute;
+    left: -5%;
+    width: 110%;
+    height: 2px;
+    bottom: -6px;
+    background-color: rgb(110, 51, 96);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.list-links:hover::after{
+    transform: scaleX(1);
 }
 
 #pos-header{
@@ -67,7 +100,9 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 70vw;
+    margin: 20px auto;
 }
 
 #pesquisar-container{
@@ -78,7 +113,8 @@ h1{
     padding: 10px;
     border: 1px solid gray;
     border-radius: 25px;
-    margin-left: 35%;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
 }
 #pesquisar{
     display: flex;
