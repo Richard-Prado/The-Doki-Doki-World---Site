@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+*{
+    font-family: 'Funnel Display', sans-serif, Arial;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin-bottom: 5px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+h1{
+    margin: 15px;
+    
+    color: rgb(110, 51, 96);
+    font-family: 'Merriweather', serif;
+}
+h1 a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-list{
+    margin-left: auto;
+    margin-right: 55px;
+}
+
+#nav-list-content{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.list-links{
+    position: relative;
+    color: rgb(110, 51, 96);
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list-links::after{
+    content: "";
+    position: absolute;
+    left: -5%;
+    width: 110%;
+    height: 2px;
+    bottom: -6px;
+    background-color: rgb(110, 51, 96);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.list-links:hover::after{
+    transform: scaleX(1);
+}
+
+
+footer{
+    background-color: rgb(56, 56, 56);
+    padding-bottom: 0;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section{
+    margin: 25px;
+    margin: 0 55px;
+}
+
+.sticker{
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.frase{
+    font-family: "Emilys Candy", serif;
+    color: goldenrod;
+    font-size: 20px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+#final-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#chanell{
+    color: brown;
+    text-decoration: none;
+}
+
